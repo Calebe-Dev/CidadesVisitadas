@@ -22,4 +22,11 @@ export class CityTableComponent {
       next: data => this.cities = data
     })
   }
+
+  delete(city: city){
+    this.service.delete(city).subscribe({
+      next: () => this.LoadCities()
+    })
+  }
+
 }

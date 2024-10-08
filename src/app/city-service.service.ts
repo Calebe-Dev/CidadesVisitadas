@@ -13,4 +13,8 @@ export class CityServiceService {
   getCities():Observable<city[]>{
     return this.http.get<city[]>("http://localhost:3000/cities");
   }
+
+  delete(city: city):Observable<void>{
+    return this.http.delete<void>("http://localhost:3000/cities/" + city.id);
+  }
 }
