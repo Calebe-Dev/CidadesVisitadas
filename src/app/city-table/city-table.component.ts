@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { City } from '../cities';
+import { CityServiceService } from '../city-service.service';
 
 @Component({
   selector: 'app-city-table',
@@ -7,4 +9,17 @@ import { Component } from '@angular/core';
 })
 export class CityTableComponent {
 
+  cities:City [] = [];
+
+  constructor(private service: CityServiceService){}
+
+  ngOnInit(){
+    this.LoadCities
+  }
+
+  LoadCities(){
+    this.service.getCities().subscribe({
+      next: data => this.cities = data
+    })
+  }
 }
