@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { City } from '../cities';
+import { city } from '../cities';
 import { CityServiceService } from '../city-service.service';
 
 @Component({
@@ -9,12 +9,12 @@ import { CityServiceService } from '../city-service.service';
 })
 export class CityTableComponent {
 
-  cities:City [] = [];
+  cities:city [] = [];
 
   constructor(private service: CityServiceService){}
 
   ngOnInit(){
-    this.LoadCities
+    this.LoadCities()
   }
 
   LoadCities(){
