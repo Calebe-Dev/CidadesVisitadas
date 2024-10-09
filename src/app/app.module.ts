@@ -8,12 +8,16 @@ import { CityTableComponent } from './city-table/city-table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CityFormComponent } from './city-form/city-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CityTableComponent,
-    CityFormComponent
+    CityFormComponent,
+    NavBarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
