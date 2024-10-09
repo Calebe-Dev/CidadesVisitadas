@@ -6,7 +6,7 @@ import { CityFormComponent } from './city-form/city-form.component';
 const routes: Routes = [
   {path: '', redirectTo:'/cities', pathMatch:'full'},
   {path: 'cities', component:CityTableComponent},
-  {path: 'form', component:CityFormComponent}
+  {path: 'cities/:id', component:CityFormComponent}
 ];
 
 @NgModule({
