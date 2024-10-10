@@ -1,45 +1,44 @@
 {
   "cities": [
-   {
-    "id": 1,
-    "name": "São Paulo",
-    "state": "SP",
-    "tpoint": "Avenida Paulista",
-    "rpc": "35000",
-    "cep": "01000000"
-  },
-  {
-    "id": 2,
-    "name": "Rio de Janeiro",
-    "state": "RJ",
-    "tpoint": "Cristo Redentor",
-    "rpc": "25000",
-    "cep": "20000000"
-  },
-  {
-    "id": 3,
-    "name": "Belo Horizonte",
-    "state": "MG",
-    "tpoint": "Praça da Liberdade",
-    "rpc": "22000",
-    "cep": "30000000"
-  },
-  {
-    "id": 4,
-    "name": "Salvador",
-    "state": "BA",
-    "tpoint": "Pelourinho",
-    "rpc": "18000",
-    "cep": "40000000"
-  },
-  {
-    "id": 5,
-    "name": "Florianópolis",
-    "state": "SC",
-    "tpoint": "Praia da Joaquina",
-    "rpc": "27000",
-    "cep": "88000000"
-  }
+    {
+      "id": 1,
+      "name": "São Paulo",
+      "state": "SP",
+      "tpoint": "Avenida Paulista",
+      "rpc": "35000",
+      "cep": "01000000"
+    },
+    {
+      "id": 2,
+      "name": "Rio de Janeiro",
+      "state": "RJ",
+      "tpoint": "Arco Da Lapa",
+      "rpc": "25000",
+      "cep": "20000000"
+    },
+    {
+      "id": 3,
+      "name": "Belo Horizonte",
+      "state": "MG",
+      "tpoint": "Praça da Liberdade",
+      "rpc": "22000",
+      "cep": "30000000"
+    },
+    {
+      "id": 4,
+      "name": "Salvador",
+      "state": "BA",
+      "tpoint": "Pelourinho",
+      "rpc": "18000",
+      "cep": "40000000"
+    },
+    {
+      "id": 5,
+      "name": "Florianópolis",
+      "state": "SC",
+      "tpoint": "Praia da Joaquina",
+      "rpc": "27000",
+      "cep": "88000000"
+    }
   ]
 }
-

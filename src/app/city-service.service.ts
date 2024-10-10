@@ -26,4 +26,8 @@ export class CityServiceService {
     return this.http.put<city>("http://localhost:3000/cities/" + city.id, city);
   }
 
+  save(city:city):Observable<city>{
+    return this.http.post<city>("http://localhost:3000/cities/", city);
+  }
+
 }

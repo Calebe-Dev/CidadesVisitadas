@@ -43,4 +43,11 @@ export class CityFormComponent implements OnInit {
       next: () => this.router.navigate(['city'])
     })
   }
+
+  save(){
+    this.service.save(this.formGrupCity.value).subscribe({
+      next: () => this.router.navigate([`/cities`])
+    })
+  }
+  
 }
