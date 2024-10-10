@@ -1,5 +1,7 @@
 <div class="container">
         <h1>Cadastro de cidades</h1>
+    
+        
         <form [formGroup]="formGrupCity">
             <div class="mb-3">
                 <label for="name" class="form-label">Cidade</label>
@@ -21,7 +23,7 @@
                 <label for="cep" class="form-label">CEP</label>
                 <input formControlName="cep" type="number" class="form-control" id="name" placeholder="Digite o CEP da cidade">
             </div>
-            <button (click)="update()"  class="Btn">
+            <button (click)="update()" *ngIf="isEditing" class="Btn">
               Editar
               <svg viewBox="0 0 512 512" class="svg">
                 <path
@@ -29,7 +31,7 @@
                 ></path>
               </svg>
             </button>
-            <button (click)="save()">
+            <button (click)="save()" *ngIf="!isEditing">
               <div class="svg-wrapper-1">
                 <div class="svg-wrapper">
                   <svg

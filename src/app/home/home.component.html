@@ -1,1 +1,34 @@
-<p>home works!</p>
+<div class="comtainer-cah">
+<div class="container" *ngFor="let city of cities">
+<div class="card">
+  <div class="top-section">
+    <div class="border"></div>
+    <div class="icons">
+      <div class="logo">
+        <h1></h1>
+      </div>
+      <div class="social-media">
+
+      </div>
+    </div>
+  </div>
+  <div class="bottom-section">
+    <span class="title">{{city.name}} | {{city.state}}</span>
+    <div class="row row1">
+      <div class="item">
+        <span class="big-text">{{city.rpc}}</span>
+        <span class="regular-text">Renda Percapta</span>
+      </div>
+      <div class="item">
+        <span class="big-text">{{city.cep}}</span>
+        <span class="regular-text">CEP</span>
+      </div>
+      <div class="item">
+        <span class="big-text">{{city.tpoint}}</span>
+        <span class="regular-text">Ponto Turistico</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

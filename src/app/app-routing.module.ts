@@ -8,6 +8,7 @@ const routes: Routes = [
   {path: '', redirectTo:'/home', pathMatch:'full'},
   {path: 'cities', component:CityTableComponent},
   {path: 'home', component:HomeComponent},
+  {path: 'city', component:CityFormComponent},
   {path: 'cities/:id', component:CityFormComponent}
 ];
 

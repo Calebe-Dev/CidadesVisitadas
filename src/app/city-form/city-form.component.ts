@@ -12,6 +12,7 @@ import { CityServiceService } from '../city-service.service';
 export class CityFormComponent implements OnInit {
 
    formGrupCity: FormGroup;
+   isEditing: boolean = false;
 
     constructor(private router: Router,
                 private activatedRouter: ActivatedRoute,
@@ -29,8 +30,11 @@ export class CityFormComponent implements OnInit {
 
   ngOnInit(): void {
       const id = Number(this.activatedRouter.snapshot.paramMap.get("id"))
+      if(id != 0){   
       this.LoadCities(id);
-  }
+      this.isEditing = true;  
+      }
+    }
 
   LoadCities(id: number){
     this.service.getCityById(id).subscribe({

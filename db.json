@@ -39,6 +39,14 @@
       "tpoint": "Praia da Joaquina",
       "rpc": "27000",
       "cep": "88000000"
+    },
+    {
+      "id": 6,
+      "name": "Salto",
+      "state": "SP",
+      "tpoint": "Praça XV",
+      "rpc": 19898991829,
+      "cep": 13326130
     }
   ]
 }
