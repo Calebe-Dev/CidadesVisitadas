@@ -19,7 +19,7 @@ export class CityFormComponent implements OnInit {
                 private service: CityServiceService,
                 private FormBuilder: FormBuilder  
                ){ this.formGrupCity = FormBuilder.group({
-                  id:     [''],
+                  id:     [''] ,
                   name:   [''],
                   state:  [''],
                   tpoint: [''],
@@ -49,9 +49,14 @@ export class CityFormComponent implements OnInit {
   }
 
   save(){
-    this.service.save(this.formGrupCity.value).subscribe({
+    const name = this.formGrupCity.get('name')?.value;
+    if ( !name || name.trim() === "" ){
+      alert("Verifique o nome")
+    }
+    else{
+      this.service.save(this.formGrupCity.value).subscribe({
       next: () => this.router.navigate([`/cities`])
     })
   }
-  
+}
 }
